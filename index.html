@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://igorvini25.github.io/Custom-alert-API/customAlert.js"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #fafafa;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        outline: none;
+        border: 1px solid #3a3a3a;
+        border-radius: 5px;
+        padding: 0.7rem 1rem;
+        margin-bottom: 0.5rem;
+        transition: 0.3s;
+      }
+      input:focus {
+        border-color: #3771fa;
+      }
+      button {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0.7rem 3.5rem;
+        font-size: 1rem;
+        background: #3771fa;
+        color: #fff;
+      }
+    </style>
+    <title>API Preview</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <input type="text" required placeholder="Alert Text" />
+        <input type="text" required placeholder="Button Text" />
+        <button>Show Alert</button>
+      </form>
+    </div>
+    <script>
+      const alertConfig = {
+        buttonText: true,
+        customColor: false
+      }
+
+      document.querySelector('form').onsubmit = e => {
+        e.preventDefault()
+      }
+
+      const alertText = document.querySelector('input')
+      const alertButton = document.querySelector('input + input')
+
+      alertText.onfocus = () => {
+        closeAlert()
+      }
+
+      alertButton.onfocus = () => {
+        closeAlert()
+      }
+
+      function closeAlert() {
+        customAlertButtonElement.click()
+      }
+
+      document.querySelector('button').onclick = () => {
+        customAlert(alertText.value, alertButton.value)
+      }
+    </script>
+  </body>
+</html>
