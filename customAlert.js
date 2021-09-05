@@ -7,17 +7,17 @@ document.head.appendChild(link)
 
 // Create and style the alert
 
-const customAlert = document.createElement('div')
-customAlert.setAttribute('id', 'customAlert')
-customAlert.style.position = 'fixed'
-customAlert.style.zIndex = '1000'
-customAlert.style.width = '100%'
-customAlert.style.margin = '-9rem auto'
-customAlert.style.display = 'flex'
-customAlert.style.justifyContent = 'center'
-customAlert.style.alignItems = 'center'
-customAlert.style.transition = '0.5s'
-document.body.prepend(customAlert)
+const customAlertDiv = document.createElement('div')
+customAlertDiv.setAttribute('id', 'customAlert')
+customAlertDiv.style.position = 'fixed'
+customAlertDiv.style.zIndex = '1000'
+customAlertDiv.style.width = '100%'
+customAlertDiv.style.margin = '-9rem auto'
+customAlertDiv.style.display = 'flex'
+customAlertDiv.style.justifyContent = 'center'
+customAlertDiv.style.alignItems = 'center'
+customAlertDiv.style.transition = '0.5s'
+document.body.prepend(customAlertDiv)
 
 const customAlertContent = document.createElement('div')
 customAlertContent.setAttribute('id', 'customAlertContent')
@@ -33,7 +33,7 @@ customAlertContent.style.flexDirection = 'column'
 customAlertContent.style.padding = '1.3rem'
 customAlertContent.style.opacity = '0'
 customAlertContent.style.transition = '0.5s'
-customAlert.appendChild(customAlertContent)
+customAlertDiv.appendChild(customAlertContent)
 
 const customAlertText = document.createElement('p')
 customAlertText.setAttribute('id', 'customAlertText')
