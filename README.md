@@ -44,13 +44,13 @@ To use the API it's very simple!
 Normal API file
 
 ```html
-<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.js">
+<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.js"></script>
 ```
 
 Minify API file
 
 ```html
-<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.min.js">
+<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.min.js"></script>
 ```
 
 <br>
