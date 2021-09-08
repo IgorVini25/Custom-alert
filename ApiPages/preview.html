@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      defer
-      src="https://igorvini25.github.io/Custom-alert-API/customAlert.js"
-    ></script>
+    <script defer src="../api-Files/customAlert.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.min.css"
+    />
     <style>
       * {
         margin: 0;
@@ -97,49 +98,49 @@
           >
         </div>
         <button>Show Alert</button>
-        <a href="./generate-config.html">API Generate Config</a>
+        <a href="https://github.com/IgorVini25/Custom-alert-API" target="_blank"
+          >API repository</a
+        >
       </form>
     </div>
     <script>
       const alertConfig = {
+        blockPage: false,
         buttonText: true,
         customColor: false
       }
 
+      let customButtonText = false
       document.querySelector('form div input').oninput = () => {
         document.querySelector('form div input').checked
-          ? document
+          ? (document
               .querySelector('form input + input')
-              .setAttribute('required', '')
-          : document
+              .setAttribute('required', ''),
+            (customButtonText = true))
+          : (document
               .querySelector('form input + input')
-              .removeAttribute('required')
+              .removeAttribute('required'),
+            (customButtonText = false))
       }
 
       document.querySelector('form').onsubmit = e => {
         e.preventDefault()
 
-        if (document.querySelector('form div input').checked) {
-          customAlert(alertText.value, alertButton.value)
-        } else {
-          customAlert(alertText.value, 'OK')
+        customButtonText
+          ? showAlert(
+              document.querySelector('input').value,
+              document.querySelector('input + input').value
+            )
+          : showAlert(document.querySelector('input').value)
+      }
+
+      const inputs = document.querySelectorAll('input')
+
+      inputs.forEach(function (input) {
+        input.onclick = function () {
+          closeAlert()
         }
-      }
-
-      const alertText = document.querySelector('input')
-      const alertButton = document.querySelector('input + input')
-
-      alertText.onfocus = () => {
-        closeAlert()
-      }
-
-      alertButton.onfocus = () => {
-        closeAlert()
-      }
-
-      function closeAlert() {
-        customAlertButtonElement.click()
-      }
+      })
     </script>
   </body>
 </html>
