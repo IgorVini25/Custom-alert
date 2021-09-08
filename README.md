@@ -20,6 +20,7 @@
 
 With this API you can display some alerts, with your style, if you want a new feature, open an PR or an Issue!
 Below you can see some styles that I made.
+You can test clicking [here](https://igorvini25.github.io/Custom-alert-API/api-Pages/preview.html)!
 
 <div align="center">
 Normal<br>
@@ -44,13 +45,19 @@ To use the API it's very simple!
 Normal API file
 
 ```html
+<!-- Script -->
 <script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.js"></script>
+<!-- Css -->
+<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.css"/>
 ```
 
 Minify API file
 
 ```html
+<!-- Script -->
 <script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.min.js"></script>
+<!-- Css -->
+<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.min.css"/>
 ```
 
 <br>
@@ -62,7 +69,9 @@ Minify API file
 // colors object
 
 // Create Config Object
-const alertConfig = {
+let alertConfig = {
+  // If true, the user can't click in page until the alert is closed
+  blockPage: true,
   buttonText: true,
   customColors: true,
     colors: {
@@ -81,11 +90,13 @@ Now you can Use the alert
 
 ```js
 // Call the function, and all is ready
-customAlert('Your Message')
+showAlert('Your Message')
 
 // If you put 'true' in buttonText you can use the alert like below
-customAlert('Your Message', 'Button text')
+showAlert('Your Message', 'Button text')
 ```
+
+If you want close the Alert without click, you can use the call the function `closeAlert()` 
 
 ---
 
@@ -101,7 +112,7 @@ You can Contribute with new features, features suggestions or translations!
 
 ---
 
-## :memo: Licença
+## :memo: License
 
 This project License is MIT. See [LICENSE](LICENSE) File for more details.
 
