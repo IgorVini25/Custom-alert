@@ -53,9 +53,16 @@ document.body.onkeyup = e => {
 
 // Configs
 
-// Block Page
-if (alertConfig.blockPage) {
-  customAlertDiv.classList.add('block-page')
+// This function repeat every time, if user change something, this need update
+requestAnimationFrame(update)
+function update() {
+  // Block Page
+  if (alertConfig.blockPage) {
+    customAlertDiv.classList.add('block-page')
+  } else {
+    customAlertDiv.classList.remove('block-page')
+  }
+  requestAnimationFrame(update)
 }
 
 // Custom Button Text
