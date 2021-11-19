@@ -1,10 +1,10 @@
 <h1 align="center">
-  Custom Alert API <br>
+  Custom Alert Library <br>
   <img alt="alert Preview" title="alert Preview" src="./assets/header.png" width="50%" />
 </h1>
 
 <p align="center">
-  <a href="#-API-Preview">API preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-API-Preview">Library preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#How-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Contributing">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">License</a>
@@ -16,9 +16,9 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
-## 💻 API Preview
+## 💻 Library Preview
 
-With this API you can display some alerts, with your style, if you want a new feature, open an PR or an Issue!
+With this Library you can display some alerts, with your style, if you want a new feature, open an PR or an Issue!
 Below you can see some styles that I made.
 You can test clicking [here](https://igorvini25.github.io/Custom-alert-API/api-Pages/preview.html)!
 
@@ -37,12 +37,12 @@ Custom Style<br>
 
 ## How to Use
 
-To use the API it's very simple!
+To use the Library it's very simple!
 
-1 - Import the API
+1 - Import the Library
 <br>
 
-Normal API file
+Normal Library file
 
 ```html
 <!-- Script -->
@@ -51,7 +51,7 @@ Normal API file
 <link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.css"/>
 ```
 
-Minify API file
+Minify Library file
 
 ```html
 <!-- Script -->
