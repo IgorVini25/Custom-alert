@@ -20,7 +20,7 @@
 
 With this Library you can display some alerts, with your style, if you want a new feature, open an PR or an Issue!
 Below you can see some styles that I made.
-You can test clicking [here](https://igorvini25.github.io/Custom-alert-API/api-Pages/preview.html)!
+You can test clicking [here](https://igorvini25.github.io/Custom-alert/pages/preview.html)!
 
 <div align="center">
 Normal<br>
@@ -46,18 +46,18 @@ Normal Library file
 
 ```html
 <!-- Script -->
-<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.js"></script>
+<script defer src="https://igorvini25.github.io/Custom-alert/files/customAlert.js"></script>
 <!-- Css -->
-<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.css"/>
+<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert/files/customAlert.css"/>
 ```
 
 Minify Library file
 
 ```html
 <!-- Script -->
-<script defer src="https://igorvini25.github.io/Custom-alert-API/customAlert.min.js"></script>
+<script defer src="https://igorvini25.github.io/Custom-alert/files/customAlert.min.js"></script>
 <!-- Css -->
-<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert-API/api-Files/customAlert.min.css"/>
+<link rel="stylesheet" href="https://igorvini25.github.io/Custom-alert/files/customAlert.min.css"/>
 ```
 
 <br>
@@ -104,7 +104,7 @@ If you want close the Alert without click, you can use the call the function `cl
 
 You can Contribute with new features, features suggestions or translations!
 
-1. Fork it (<https://github.com/IgorVini25/Custom-alert-API/fork>)
+1. Fork it (<https://github.com/IgorVini25/Custom-alert/fork>)
 2. Create your feature branch (`git checkout -b featureOrTranslation`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature`)
